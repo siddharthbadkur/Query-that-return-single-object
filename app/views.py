@@ -5,6 +5,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home(request):
+    
     ## get(coloumn_name=value)
     # data0 = Student.objects.get(id=3) # get arguments always used primary-key coloumn
     # data0 = Student.objects.get(stu_name="Neeraj Kumar")
@@ -97,10 +98,11 @@ def home(request):
     # data = Student .objects.filter(id=11).update(stu_name="ravi",stu_email="ravi@gmail.com",stu_city='Mandala')
     # print(data)
 
-    ## get().delete()
-    # data = Student.objects.get(id=11).delete()
+    ## get().delete()#this is making for getting data from databse
+    # data = Student.objects.get(id=8).delete()
     # print(data)
 
     # filter().delete()
-    data = Student.objects.filter(stu_name="Neeraj").delete()
-    print(data)
+    # data = Student.objects.filter(stu_name="ravisingh").delete()
+    # print(data)
+    # return  HttpResponse(data)
